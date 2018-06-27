@@ -1,0 +1,35 @@
+body {
+    background-color: gray;
+}
+
+.errors {
+    text-align: left;
+    color: red;
+    margin-bottom: 1px; 
+}
+
+.loginShell {
+    margin-top: 20vh;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.spaceButton {
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.mockLink {
+    color: rgb(72, 142, 165);
+    cursor: pointer;
+}
+
+.mockLink:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 450px) {
+    .loginShell {
+        margin-top: 3vh;
+    }
+}

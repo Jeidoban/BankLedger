@@ -1,0 +1,35 @@
+.loginShell {
+    margin-top: 20vh;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.balanceText {
+    text-align: left;
+}
+
+.group {
+    text-align: left;
+}
+
+.itemBox {
+    background-color: white;
+    height: 40px;
+    border-radius: 3px;
+    border-bottom: solid gray 1px;
+}
+
+.ledgerItemHolder {
+    border: solid gray 1px;
+    border-bottom-color: transparent;
+    border-radius: 3px;
+}
+
+.rowAtts {
+    position: relative;
+    top: 8px;
+}
+
+.logoutButton {
+    text-align: right;
+}
