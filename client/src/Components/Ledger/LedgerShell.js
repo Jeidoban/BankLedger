@@ -5,7 +5,7 @@ import Transaction from './Transaction';
 class LedgerShell extends Component {
     constructor(props) {
         super();
-        this.intl = new Intl.NumberFormat('us-US', { style: 'currency', currency: 'USD' });
+        this.intl = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
         this.buttonBlue = { backgroundColor: '#8BA6A9', borderColor: '#8BA6A9' };
         this.state = {
             balance: '',

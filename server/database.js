@@ -5,7 +5,7 @@ var _ = require('lodash');
 
 module.exports = function() {
     let uid = new UIDGenerator();
-    let intl = new Intl.NumberFormat('us-US', {style: 'currency', currency: 'USD'});
+    let intl = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
     this.users = []; // Acts as a users table.
     this.transactions = []; // Acts as a transaction table.
     this.userIdCounter = 0;
