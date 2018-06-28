@@ -18,7 +18,12 @@ class Transaction extends Component {
                             <p>{this.intl.format(this.props.balance)}</p>
                         </div>
                         <div className="col-xs-4 col-sm-4 col-md-4 col-xl-4" style={{textAlign: 'right'}}>
-                            <p style={{color: /^\+\$\d*/.test(this.props.amount) ? 'green' : 'red'}}>{this.props.amount}</p>
+                            <p 
+                                style={{color: this.props.amount >= 0 ? 'green' : 'red'}}>
+                                {this.props.amount >= 0 ? 
+                                "+" + this.intl.format(this.props.amount) : 
+                                this.intl.format(this.props.amount)}
+                            </p>
                         </div>
                     </div>
                 </div>

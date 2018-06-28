@@ -16,7 +16,7 @@ class LoginSignupShell extends Component {
     }
 
     setErrorsToNull() {
-        this.setState({signupErrors: null, loginErrors: null})
+        this.setState({signupErrors: null, loginErrors: null});
     }
 
     // Connects to the api for logging in and signing up. Takes in

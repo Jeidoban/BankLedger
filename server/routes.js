@@ -1,5 +1,4 @@
 const Database = require('./database');
-var _ = require('lodash');
 let db = new Database();
 let Validation = require('./validation')
 let valid = new Validation(db);

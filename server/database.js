@@ -1,11 +1,8 @@
 const bcrypt = require('bcrypt');
 const UIDGenerator = require('uid-generator');
 
-var _ = require('lodash');
-
 module.exports = function() {
     let uid = new UIDGenerator();
-    let intl = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
     this.users = []; // Acts as a users table.
     this.transactions = []; // Acts as a transaction table.
     this.userIdCounter = 0;
@@ -68,7 +65,7 @@ module.exports = function() {
             id: this.transactionIdCounter++,
             userId: user.id,
             balance: user.balance,
-            amount: isWithdraw ? "-" + intl.format(changeAmount) : "+" + intl.format(changeAmount),
+            amount: isWithdraw ? changeAmount * -1 : changeAmount,
             date: (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear()
             
         };
