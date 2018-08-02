@@ -19,5 +19,6 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1"
-  }
+  },
+  "homepage": "http://localhost:5000/projects/bank-ledger"
 }
