@@ -29,7 +29,7 @@ class LedgerShell extends Component {
             }
         };
 
-        fetch("/projects/bank-ledger/api/getBalance", options)
+        fetch("api/getBalance", options)
             .then(res => res.json())
             .then(payload => {
                 if (payload.message) { // If the token isn't valid...
@@ -42,7 +42,7 @@ class LedgerShell extends Component {
 
     depositOrWithdrawClicked(event) {
         let regex = /^[0-9]\d*(()?(\.\d{0,2})?)$/;
-        let url = this.state.withdrawClicked ? "/projects/bank-ledger/api/makeWithdrawl" : "/projects/bank-ledger/api/makeDeposit";
+        let url = this.state.withdrawClicked ? "/api/makeWithdrawl" : "/api/makeDeposit";
         let options = {
             method: "PUT",
             body: JSON.stringify({

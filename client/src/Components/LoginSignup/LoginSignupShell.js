@@ -32,7 +32,7 @@ class LoginSignupShell extends Component {
         };
 
         if (isSignup) {
-            fetch("/projects/bank-ledger/api/createUser", options)
+            fetch("/api/createUser", options)
                 .then(res => res.json())
                 .then(payload => {
                     if (payload.message) { // If signup is successful...
@@ -44,7 +44,7 @@ class LoginSignupShell extends Component {
                     }
                 });
         } else {
-            fetch("/projects/bank-ledger/api/login", options)
+            fetch("/api/login", options)
                 .then(res => res.json())
                 .then(payload => {
                     if (payload.token) { // If login was successful...
