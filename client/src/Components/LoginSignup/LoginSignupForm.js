@@ -45,7 +45,7 @@ class LoginSignupSubmit extends Component {
                             errors={this.props.loginErrors}
                             ref={this.login}
                         />}
-                    <button type="submit" className="btn btn-primary spaceButton">Login</button>
+                    <button type="submit" className="btn btn-primary spaceButton">{this.state.signupClicked ? "Sign Up" : "Login"}</button>
                     <p 
                         className="mockLink" 
                         onClick={this.handleSignupLoginClicked}>{this.state.signupClicked ? 
